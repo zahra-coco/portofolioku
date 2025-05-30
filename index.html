@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Zahra Putri Asifa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      body {
+        background-color: #1e1e1e;
+        color: white;
+      }
+
+      header {
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+      }
+
+      header nav a {
+        padding: 10px 15px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        margin: 5px;
+      }
+
+      header nav a.active {
+        background-color: #00e0c6;
+        color: black;
+      }
+
+      nav a:hover {
+        background: #e5e5e5;
+        color: black;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        background-image: url("background-aboutme.png");
+        background-size: cover;
+        background-position: center;
+        min-height: 80vh;
+      }
+
+      .fade-item {
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.3s;
+      }
+
+      .delay-2 {
+        animation-delay: 0.5s;
+      }
+
+      .delay-3 {
+        animation-delay: 0.7s;
+      }
+
+      .delay-4 {
+        animation-delay: 1.1s;
+      }
+
+      .delay-5 {
+        animation-delay: 1.2s;
+      }
+
+      .container h1 {
+        margin-top: 20px;
+        font-size: 1.8rem;
+      }
+
+      .profile-section {
+        margin-top: 30px;
+      }
+
+      .profile-section img {
+        width: 265px;
+        height: 275px;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      .profile-section h2 {
+        margin-top: 10px;
+        font-size: 2rem;
+      }
+
+      .quote {
+        margin-top: 25px;
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+
+      footer {
+        background-color: #000;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 0.85rem;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+        display: inline-block;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+        transition: transform 0.3s ease;
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.2);
+      }
+
+      @media (max-width: 600px) {
+        .container h1 {
+          font-size: 1.3rem;
+        }
+        .profile-section h2 {
+          font-size: 1rem;
+        }
+        .quote {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="active">About me</a>
+        <a href="pengalaman.html">Pengalaman</a>
+        <a href="kemampuan.html">Kemampuan</a>
+        <a href="sertifikat.html">Sertifikat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 class="fade-item delay-1">WELCOME EVERYONE!!</h1>
+      <div class="profile-section fade-item delay-2">
+        <img src="images/zahra.png" alt="Foto Zahra" />
+        <h2>Zahra Putri Asifa</h2>
+      </div>
+      <p class="quote fade-item delay-3">
+        Haii! kalian bisa panggil saya Zahra, sekarang saya sedang menempuh
+        pendidikan di SMKN 1 Nglegok, dan saya berusia delapan belas tahun saya
+        memiliki tempat tinggal di Blitar, Jawa Timur. Saya memiliki minat di
+        jurusan IT karena saya ingin mengeksplor lebih jauh lagi teknologi di
+        era global ini.<br />
+      </p>
+
+      <p class="quote fade-item delay-3">
+        Saya Memiliki kalimat favorit inspiratif yaitu:
+      </p>
+
+      <p class="quote fade-item delay-4">
+        “ Keberhasilan bukanlah milik orang yang pintar, Keberhasilan adalah
+        kepunyaan mereka yang senantiasa berusaha ” ~ B.J. Habibie
+      </p>
+    </div>
+
+    <footer class="fade-item delay-5">
+      <p>*copyright by zahraputriasifa*</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/zahraputriz._asf" target="_blank">
+          <img src="images/instagramputih.png" alt="Instagram" />
+        </a>
+        <a href="mailto:zp90866@gmail.com">
+          <img src="images/emailputih.png" alt="Email" />
+        </a>
+        <a href="https://zahraputriasifa123.blogspot.com/" target="_blank">
+          <img src="images/bloggerputih.png" alt="Blogger" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

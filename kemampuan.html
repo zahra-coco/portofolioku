@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemampuan - Zahra Putri Asifa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      body {
+        background: linear-gradient(to bottom right, #78dfdf, #fff94e);
+        color: black;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 98%;
+      }
+
+      nav a {
+        padding: 10px 15px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 5px;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      nav a.active {
+        background-color: #00e0c6;
+      }
+      nav a:hover {
+        background: #e5e5e5;
+        color: black;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 300px;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .card img {
+        max-width: 65px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .card ul {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      footer {
+        background-color: #000;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 0.85rem;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+        display: inline-block;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">About me</a>
+        <a href="pengalaman.html">Pengalaman</a>
+        <a href="kemampuan.html" class="active">Kemampuan</a>
+        <a href="sertifikat.html">Sertifikat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card-grid">
+      <div class="card">
+        <h3>
+          <img src="images/basic coding.png" />
+          Basic Coding:
+        </h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java Script</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="images/logofigma.png" />
+          Desain Web:
+        </h3>
+        <ul>
+          <li>Mendesain web di figma</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="images/logoaws.png" />
+          Cloud Computing:
+        </h3>
+        <ul>
+          <li>VPC</li>
+          <li>EC2</li>
+          <li>API Gateway</li>
+          <li>Lambda</li>
+          <li>DynamoDB</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="images/logo debian.png" />
+          Linux Debian:
+        </h3>
+        <ul>
+          <li>Basic Command</li>
+          <li>SSH</li>
+          <li>Web server, Database, Mail server</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="images/logomtcna.png" />
+          Mikrotik MTCNA:
+        </h3>
+        <ul>
+          <li>Basic Configuration</li>
+          <li>Routing Static</li>
+          <li>Wireless</li>
+          <li>Security Profile</li>
+          <li>QoS</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>
+          <img src="images/logoredhat.png" />
+          Red Hat:
+        </h3>
+        <ul>
+          <li>RH104</li>
+          <li>RH124</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>*copyright by zahraputriasifa*</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/zahraputriz._asf" target="_blank">
+          <img src="images/instagramputih.png" alt="Instagram" />
+        </a>
+        <a href="mailto:zp90866@gmail.com">
+          <img src="images/emailputih.png" alt="Email" />
+        </a>
+        <a href="https://zahraputriasifa123.blogspot.com/" target="_blank">
+          <img src="images/bloggerputih.png" alt="blogger" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

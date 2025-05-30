@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikat Zahra</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(to bottom right, #78dfdf, #fff94e);
+        color: black;
+      }
+
+      header {
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 98%;
+      }
+
+      header nav a {
+        padding: 10px 15px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        margin: 5px;
+      }
+
+      header nav a.active {
+        background-color: #00e0c6;
+        color: black;
+      }
+      nav a:hover {
+        background: #e5e5e5;
+        color: black;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 20px;
+      }
+
+      .profile img {
+        width: 71px;
+        height: 72px;
+        border-radius: 50%;
+      }
+
+      .profile span {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+        justify-items: center;
+      }
+
+      .certificate {
+        width: 100%;
+        max-width: 250px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .certificate:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .fullscreen-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      .fullscreen-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      footer {
+        background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 15px 1px;
+        font-size: 0.85rem;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+        display: inline-block;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+      }
+
+      @media (min-width: 700px) {
+        .gallery {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .gallery > :nth-child(n + 5) {
+          grid-column: span 1;
+        }
+      }
+
+      @media (max-width: 699px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">About me</a>
+        <a href="pengalaman.html">Pengalaman</a>
+        <a href="kemampuan.html">Kemampuan</a>
+        <a href="sertifikat.html" class="active">Sertifikat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <div class="profile">
+      <img src="images/zahra.png" alt="Foto Profil" />
+      <span>Zahra Putri Asifa</span>
+    </div>
+
+    <div class="gallery">
+      <img
+        src="images/linuxfundamental.png"
+        alt="Sertifikat"
+        class="certificate"
+      />
+      <img
+        src="images/virtualmachnine.png"
+        alt="Sertifikat"
+        class="certificate"
+      />
+      <img
+        src="images/networkfundamental.png"
+        alt="Sertifikat"
+        class="certificate"
+      />
+      <img src="images/js.png" alt="Sertifikat" class="certificate" />
+      <img src="images/rh104.png" alt="Sertifikat" class="certificate" />
+      <img src="images/rh124.png" alt="Sertifikat" class="certificate" />
+      <img src="images/fortinet.png" alt="Sertifikat" class="certificate" />
+      <img src="images/mtcna.png" alt="Sertifikat" class="certificate" />
+    </div>
+
+    <div class="fullscreen-overlay" id="overlay">
+      <img src="" alt="Fullscreen" id="overlayImg" />
+    </div>
+
+    <footer>
+      <p>*copyright by zahraputriasifa*</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/zahraputriz._asf" target="_blank">
+          <img src="images/instagramputih.png" alt="Instagram" />
+        </a>
+        <a href="mailto:zp90866@gmail.com">
+          <img src="images/emailputih.png" alt="Email" />
+        </a>
+        <a href="https://zahraputriasifa123.blogspot.com/" target="_blank">
+          <img src="images/bloggerputih.png" alt="blogger" />
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const overlay = document.getElementById("overlay");
+      const overlayImg = document.getElementById("overlayImg");
+      const certificates = document.querySelectorAll(".certificate");
+
+      certificates.forEach((cert) => {
+        cert.addEventListener("click", () => {
+          overlay.style.display = "flex";
+          overlayImg.src = cert.src;
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        overlay.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

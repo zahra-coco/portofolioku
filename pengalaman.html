@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengalaman - Zahra Putri Asifa</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      body {
+        background-color: #1e1e1e;
+        color: white;
+        background-image: url("background-pengalaman.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 98%;
+      }
+
+      nav a {
+        padding: 10px 15px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        flex-grow: 1;
+        margin: 5px;
+        text-align: center;
+      }
+
+      nav a.active {
+        background-color: #00e0c6;
+        color: black;
+      }
+      nav a:hover {
+        background: #e5e5e5;
+        color: black;
+      }
+
+      .experience-container {
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+      }
+
+      .experience-container h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .experience-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .experience-item {
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 10px;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.6;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .experience-item img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+      }
+
+      footer {
+        background-color: #000;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 0.85rem;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+        display: inline-block;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+      }
+
+      @media (max-width: 600px) {
+        .experience-container h1 {
+          font-size: 1.5rem;
+        }
+
+        .experience-item {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">About me</a>
+        <a href="pengalaman.html" class="active">Pengalaman</a>
+        <a href="kemampuan.html">Kemampuan</a>
+        <a href="sertifikat.html">Sertifikat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+    <div class="experience-container">
+      <h1>MY EXPERIENCE :</h1>
+      <div class="experience-list">
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Menjadi sie organisasi di Komunitas IT (KITS) 2023 – 2025</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Menjadi Sekertaris di Komunitas IT 2025 – sampai sekarang</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Membuat Debian 11 Module</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Membuat MTCNA Module</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Membuat web berbasis lokal</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Membuat web dinamis</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Crimping kabel LAN</span>
+        </div>
+        <div class="experience-item">
+          <img src="images/ikon.png" alt="icon" />
+          <span>Splicing FO (Fiber Optik)</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>*copyright by zahraputriasifa*</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/zahraputriz._asf" target="_blank">
+          <img src="images/instagramputih.png" alt="Instagram" />
+        </a>
+        <a href="mailto:zp90866@gmail.com">
+          <img src="images/emailputih.png" alt="Email" />
+        </a>
+        <a href="https://zahraputriasifa123.blogspot.com/" target="_blank">
+          <img src="images/bloggerputih.png" alt="blogger" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

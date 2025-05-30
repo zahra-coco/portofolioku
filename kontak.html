@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Zahra</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Times New Roman", serif;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(to right, #78dfdf, #fff94e);
+        color: #000;
+      }
+
+      /* === NAVIGASI === */
+      header {
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: #000;
+        padding: 10px;
+        max-width: 100%;
+      }
+
+      nav a {
+        text-decoration: none;
+        background: white;
+        color: black;
+        font-weight: bold;
+        padding: 10px 18px;
+        margin: 6px;
+        border-radius: 8px;
+        transition: 0.3s;
+        text-align: center;
+        flex-grow: 1;
+        margin: 5px;
+      }
+
+      nav a.active {
+        background-color: #00e0c6;
+        color: black;
+      }
+
+      nav a:hover {
+        background: #e5e5e5;
+        color: black;
+      }
+
+      /* === FOTO PROFIL === */
+      .profile-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .profile-container img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* === KARTU SOSMED === */
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        padding: 25px 20px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 250px;
+        transition: 0.3s;
+      }
+
+      .card img {
+        width: 150px;
+        height: 141px;
+        transition: transform 0.3s ease;
+        margin-bottom: 15px;
+      }
+
+      .card img:hover {
+        transform: scale(1.2);
+      }
+
+      .card a.button {
+        display: inline-block;
+        background: black;
+        color: white;
+        padding: 6px 12px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      /* === FOOTER === */
+      footer {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 5px 5px;
+      }
+
+      .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 8px;
+      }
+
+      .footer-icons a img {
+        width: 25px;
+        height: 25px;
+        transition: transform 0.3s ease;
+      }
+
+      .footer-icons a img:hover {
+        transform: scale(1.3);
+      }
+
+      /* === RESPONSIVE === */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">About me</a>
+      <a href="pengalaman.html">Pengalaman</a>
+      <a href="kemampuan.html">Kemampuan</a>
+      <a href="sertifikat.html">Sertifikat</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+
+    <div class="profile-container">
+      <img src="images/zahra.png" alt="Foto Zahra" />
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="images/logoig2.png" alt="Instagram" />
+        <a
+          href="https://www.instagram.com/zahraputriz._asf"
+          target="_blank"
+          class="button"
+          >@zahraputriz._asf</a
+        >
+      </div>
+      <div class="card">
+        <img src="images/logoemail.png" alt="Email" />
+        <a href="mailto:zp90866@gmail.com" target="_blank" class="button"
+          >zp90866@gmail.com</a
+        >
+      </div>
+      <div class="card">
+        <img src="images/blogger.png" alt="Blogger" />
+        <a
+          href="https://zahraputriasifa123.blogspot.com/"
+          target="_blank"
+          class="button"
+          >zahraputrisifa123.blogspot.com</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <p>*copyright by zahraputriasifa*</p>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/zahraputriz._asf" target="_blank">
+          <img src="images/instagramputih.png" alt="Instagram" />
+        </a>
+        <a href="mailto:zp90866@gmail.com">
+          <img src="images/emailputih.png" alt="Email" />
+        </a>
+        <a href="https://zahraputriasifa123.blogspot.com/" target="_blank">
+          <img src="images/bloggerputih.png" alt="Blogger" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
